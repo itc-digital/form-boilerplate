@@ -1,11 +1,13 @@
 import React from 'react';
 import MaskedInput from 'react-text-mask';
 
-const PhoneInput = () => {
+const PhoneInput = (props) => {
     return (
         <MaskedInput
+            onChange={props.onChange}
+            pattern="\d*"
             mask={[
-                '+7',
+                '8',
                 ' ',
                 '(',
                 /[1-9]/,
