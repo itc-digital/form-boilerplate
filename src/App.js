@@ -7,7 +7,7 @@ import Response from './Response';
 class App extends Component {
     state = {
       phoneNumber: "",
-      response: "fghj"
+      response: ""
     };
 
     handleChange = event => this.setState({ phoneNumber: event.target.value });
@@ -35,7 +35,7 @@ class App extends Component {
                 <p>
                     <PhoneInput onChange={this.handleChange} />
                 </p>
-                <button onClick={this.departure}>res</button>
+                <button onClick={this.departure}>Отправить</button>
                 <Response  response={this.state.response}/>
             </div>
         );

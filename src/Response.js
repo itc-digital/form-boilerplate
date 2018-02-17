@@ -4,7 +4,7 @@ class Response extends Component {
   render(){
     return (
       <div>
-        <p>Props: {this.props.response}</p>
+        <p>Результат: {this.props.response}</p>
       </div>
     )
   }
